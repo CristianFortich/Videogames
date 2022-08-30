@@ -86,7 +86,7 @@ export const organizeGames = (data)=>{
 export const deleteGame = (id)=>{
     return async function(dispatch){
         if (isNaN(parseInt(id))) {
-            await axios.delete(`https://videogame-fortich-api.herokuapp.com/videogames/${id}`)
+            await axios.delete(`https://videogame-fortich-api.herokuapp.com/videogame/${id}`)
         }
         dispatch({type: DELETE_GAME, payload: id})
     }

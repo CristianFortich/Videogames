@@ -89,7 +89,7 @@ function CreateGame(props) {
       setState({...state, error: {ok: validation.ok, message: validation.message}})
     }else{
       setState({...state, error: {ok: validation.ok, message: validation.message}})
-      fetch('https://videogame-fortich-api.herokuapp.com/videogames', {
+      fetch('https://videogame-fortich-api.herokuapp.com/videogame', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

@@ -13,7 +13,7 @@ const DetailedGame = () => {
         let link = '';
 		if(isNaN(parseInt(id))){
 			id = id.split('-')[1];
-            link = `https://videogame-fortich-api.herokuapp.com/videogames/${id}`;
+            link = `https://videogame-fortich-api.herokuapp.com/videogame/${id}`;
 		}else {
             link = `https://api.rawg.io/api/games/${id}?key=913bbd053b714cc8a46cd399097bfa02`
         }
