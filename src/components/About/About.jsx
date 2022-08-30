@@ -15,7 +15,7 @@ function About() {
                 <p><h2>About Me</h2></p>
                 <p>Full stack developer with experience in NodeJS, React, Redux, Postgres and technologies surounding web development.</p>
                 <p>Name: Cristian Yezid Fortich Almanza</p>
-                <p>Linkedin: <a target="_blank" className={aboutStyle.a} href='www.linkedin.com/in/cristian-fortich'>www.linkedin.com/in/cristian-fortich</a>
+                <p>Linkedin: <a target="_blank" className={aboutStyle.a} href='https://www.linkedin.com/in/cristian-fortich'>www.linkedin.com/in/cristian-fortich</a>
                 </p>
                 <p>GitHub: <a target="_blank" className={aboutStyle.a} href='https://github.com/CristianFortich'>CristianFortich</a>
                 </p>
