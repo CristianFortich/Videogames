@@ -1,24 +1,33 @@
 .mainBox{
     background-color: rgb(38, 38, 70);
-    display: flex;
+    display:flex;
     justify-content:space-between;
 }
+
 .aboutPage{
-    margin-left: 40px;
-    width: 500px;
+    margin-left: 20px;
+    width: 40%;
 }
 .aboutMe{
-    margin-right: 40px;
-    width: 400px;
+    margin-right: 20px;
+    width: 40%;
 }
 .a{
     text-decoration: none;
     color: rgb(193, 213, 231);;
 }
-.linkedin{
-    position: absolute;
-    width: 20px;
-}
-.linkedin :hover{
-    cursor: pointer;
+@media (max-width: 720px){
+    .mainBox{
+        display: block;
+    }
+    .aboutPage{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+    .aboutMe{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
 }

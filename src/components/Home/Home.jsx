@@ -38,11 +38,9 @@ export class Home extends Component {
           <button className={homeStyle.createGameB} onClick={(e)=>handleAboutSwitch(e)}>About</button>
           <SearchBar/>
         </div>
-        <Draggable>
           <div className={homeStyle.about}>
             {this.props.about?<About/>:null}
           </div>
-        </Draggable>
         <Draggable>
           <div className={homeStyle.CreateGame}>
             {this.props.switch?<CreateGame genres={this.props.genres}/>:null}
