@@ -48,13 +48,13 @@ export class Home extends Component {
             {this.props.switch?<CreateGame genres={this.props.genres}/>:null}
           </div>
         </Draggable>
-        <div className={homeStyle.container}>
-          {this.props.games.length > 0 ? this.props.pages.filter(g=>g.page == this.props.page).map((p) => {
-            return (
-              <GameCard  key={p.game.id} id={p.game.id} name={p.game.name} released={p.game.released} genres={p.game.genres} image={p.game.background_image} />
-              );	
-            }): <img className={homeStyle.loading} src={loadingImage} alt='Loading...'></img>}
-        </div>
+          <div className={homeStyle.container}>
+            {this.props.games.length > 0 ? this.props.pages.filter(g=>g.page == this.props.page).map((p) => {
+              return (
+                <GameCard  key={p.game.id} id={p.game.id} name={p.game.name} released={p.game.released} genres={p.game.genres} image={p.game.background_image} />
+                );	
+              }): <p aling="left"><img className={homeStyle.loading} src={loadingImage} alt='Loading...'></img></p>}
+          </div>
         <div className={homeStyle.pages}>
           {this.props.pages.length > 0 ? this.props.buttonPage.map((b)=>{
             return (

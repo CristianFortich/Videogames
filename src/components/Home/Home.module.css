@@ -1,14 +1,15 @@
 .mainbox{
     padding: 0;
     margin-top: -20px;
-    height: 100%;
+    height: auto;
+    width: 100%;
     background-color:rgb(13, 14, 14);
 }
 h2{
     color: whitesmoke;
 }
 .logo{
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 18px;
     font-size: 40px;
     border: 10px;
@@ -22,11 +23,12 @@ h2{
     align-items:center;
     justify-content:space-between;
 }
-.loading{
+/* .loading{
     height: 500px;
     margin-left: 485px;
-}
+} */
 .container {  
+    width: auto;
     margin-left: 18px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -51,8 +53,7 @@ h2{
     margin-bottom: 28px;
   }
   .createGameB {
-    margin-top: 4px;
-	box-shadow:inset 0px 39px 0px -24px #9440bd;
+    box-shadow:inset 0px 39px 0px -24px #9440bd;
 	background-color:#9440bd;
 	border-radius:16px;
 	border:2px solid #d4c3d4;
@@ -61,12 +62,14 @@ h2{
 	color:#ffffff;
 	font-family:Arial;
 	font-size:15px;
-	padding:6px 15px;
+	padding:1px 15px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
+    margin-left: 18px;
 }
 .createGameB:hover {
-	background-color:#8a3633;
+	cursor: pointer;
+    box-shadow:inset 0px 39px 0px -24px #552595;
 }
 .createGameB:active {
 	position:relative;
