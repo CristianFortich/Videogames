@@ -1,0 +1,24 @@
+.mainBox{
+    background-color: rgb(38, 38, 70);
+    display: flex;
+    justify-content:space-between;
+}
+.aboutPage{
+    margin-left: 40px;
+    width: 500px;
+}
+.aboutMe{
+    margin-right: 40px;
+    width: 400px;
+}
+.a{
+    text-decoration: none;
+    color: rgb(193, 213, 231);;
+}
+.linkedin{
+    position: absolute;
+    width: 20px;
+}
+.linkedin :hover{
+    cursor: pointer;
+}

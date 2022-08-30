@@ -1,0 +1,55 @@
+.mainBox{
+    margin: 5px;
+    width: 250px;
+    background:linear-gradient(to bottom, rgb(13, 14, 14), rgb(94, 83, 131));
+    border: 2px solid rgb(94, 83, 131);
+    border-radius: 20px;
+    height: 350px;
+}
+
+/* .box{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.img{
+    margin-top: 7px;
+    margin-left: 7px;
+    align-items: center;
+    width: 235px;
+    height: 130px;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    text-decoration:solid;
+    color: rgb(193, 213, 231);
+}
+
+.name:hover{
+    cursor: pointer;
+    border: 2;
+    text-decoration: underline;
+    color: antiquewhite;
+}
+
+.close{
+    background-color: rgb(168, 76, 76);
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+    color: aliceblue;
+    border: 2px solid rgb(160, 52, 52);
+    border-radius: 7px;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+.genres{
+    display: flex;
+    justify-content: center;
+    color: rgb(185, 213, 237);   
+}
