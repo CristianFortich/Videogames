@@ -95,7 +95,7 @@ const rootReducer = (state = initialState, action) => {
   }
 
   const setButtonNumbers = (book)=>{
-    let chapters = [1]
+    let chapters = []
     let count = 0;
     for (let index = 0; index < book.length; index++) {
       if(((index)%15)==0){
