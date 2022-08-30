@@ -1,4 +1,5 @@
 .mainBox{
+    width: 100%;
     border-radius: 25px;
     background:linear-gradient(to bottom, rgb(147, 139, 164), rgb(94, 83, 131));
 }
@@ -18,7 +19,7 @@
     margin-bottom: 10px;
     background-color: rgb(94, 83, 131);
     border-radius: 16px;
-    width: 400px;
+    width: 90%;
 }
 .error{
     margin-bottom: 18px;
@@ -92,4 +93,9 @@ input{
     cursor: pointer;
     box-shadow:inset 0px 39px 0px -24px #552595;
     background-color:#9a60b7;
+}
+@media (max-width: 720px){
+    .inputText{
+        width: 60%;
+    }
 }

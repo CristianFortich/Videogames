@@ -45,7 +45,11 @@ const DetailedGame = () => {
 
 	return (
 		<div className={detailStyle.mainBox}>
-            {isLoading ? (<img src={loadingImage}/>):
+            {isLoading ? (
+                <div className={detailStyle.divImg}>
+                    <img className={detailStyle.lImg} src={loadingImage}/>
+                </div>
+            ):
 			(<>
                 <div className={detailStyle.divHead}></div>
                 <p className={detailStyle.p}>
