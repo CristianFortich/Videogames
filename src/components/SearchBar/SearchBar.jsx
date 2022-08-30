@@ -50,10 +50,10 @@ function SearchBar() {
           <option value={"ascend"}>ascendent</option>
         </select>
         <select onChange={handleChange} name="orderBy">
-          <option selecter="yes" value={"name"}>By Name</option>
-          <option value={"rating"}>By rating</option>
+          <option selecter="yes" value={"name"}>Name</option>
+          <option value={"rating"}>Rating</option>
         </select>
-        <button className={searchStyle.button} onClick={order}>Filter/Sort</button>
+        <button className={searchStyle.button} onClick={order}>Filter</button>
       </div>
     </div>
     )

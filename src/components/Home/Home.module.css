@@ -159,4 +159,15 @@ h2{
           "."
           ".";
       }
+      .pageButtons{
+          margin-top: 10px;
+          margin-left: 2px;
+          margin-right: 2px;
+          margin-bottom: 18px;
+          width: 30px;
+          height: 30px;
+          color: whitesmoke;
+          font-size: 15px;
+          background-color: #433382;
+      }
 }
