@@ -8,8 +8,8 @@ function About() {
         <div className={aboutStyle.mainBox}>
             <div className={aboutStyle.aboutPage}>
                 <p><h2>About this page</h2></p>
-                <p>This is an app made for learning purpose. It was build from the ground up. Database (db) with postgres, Api with Node JS and conection with the db with Sequelize. The app was created with React and JS. Since the purpose was learning, css was handled manualy</p>
-                <p aling='left'>This web page request inforsmation about videogames and external api and it also allows you to "create/input" information about a game, and it saves it on a db. you can serach for games by name, sort them by score or name, filter the games of the internal db and the ones from the outside sorce.</p>
+                <p>This is an app made for learning purposes. It was build from the ground up. Database (db) with postgres, Api with Node JS and connection with the db with Sequelize. The app was created with React and JS. Since the purpose was learning, css was handled manualy</p>
+                <p aling='left'>This web page request information about videogames to an external api and it also allows you to "create/input" information about a game to then saved it on a db. you can search for games by name, sort them by score or name, filter the games of the internal db and the ones from the outside source.</p>
             </div>
             <div className={aboutStyle.aboutMe}>
                 <p><h2>About Me</h2></p>
