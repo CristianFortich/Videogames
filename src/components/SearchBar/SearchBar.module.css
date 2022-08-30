@@ -20,7 +20,7 @@ select:hover{
     cursor: pointer;
 }
 .button{
-	box-shadow:inset 0px 39px 0px -24px #9440bd;
+    box-shadow:inset 0px 39px 0px -24px #9440bd;
 	background-color:#9440bd;
 	border-radius:16px;
 	border:2px solid #d4c3d4;
@@ -41,4 +41,24 @@ select:hover{
 input{
     border-radius: 6px;
     background-color: #b8b7e5;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    margin-left: 18px;
+}
+@media (max-width: 1200px){
+    .mainBox{
+        display: block;
+    }
+    .searcher{
+        margin-top: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+    .filter{
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+    }
 }

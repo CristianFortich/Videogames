@@ -35,7 +35,11 @@ function SearchBar() {
   }
   return (
     <div className={searchStyle.mainBox}>
-      <div>
+      <div className={searchStyle.searcher}>
+        <input type="text" placeholder="Search game.." value={state.toSearch} onChange={handleChange} name="toSearch"/>
+        <button type="submit" className={searchStyle.button} onClick={search}>Search</button>
+      </div>
+      <div className={searchStyle.filter}>
         <select className='' onChange={handleChange} name="filter">
           <option selecter="yes" value={"both"}>Both</option>
           <option value={"added"}>Added</option>
@@ -50,10 +54,6 @@ function SearchBar() {
           <option value={"rating"}>By rating</option>
         </select>
         <button className={searchStyle.button} onClick={order}>Filter/Sort</button>
-      </div>
-      <div className={searchStyle.searcher}>
-        <input type="text" placeholder="Search.." value={state.toSearch} onChange={handleChange} name="toSearch"/>
-        <button type="submit" className={searchStyle.button} onClick={search}>Search</button>
       </div>
     </div>
     )

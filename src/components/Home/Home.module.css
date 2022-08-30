@@ -41,18 +41,18 @@ h2{
       ". . . . .";
   }
   .CreateGame{
-    width: 440px;
+      width: 440px;
     border-radius: 16px;
     transition: ease-in-out;
     position: fixed;
-  }
+}
   .about{
-    width: 100%;
-    border-radius: 16px;
+      width: 100%;
+      border-radius: 16px;
     transition: ease-in-out;
     margin-bottom: 28px;
-  }
-  .createGameB {
+}
+.createGameB {
     box-shadow:inset 0px 39px 0px -24px #9440bd;
 	background-color:#9440bd;
 	border-radius:16px;
@@ -94,4 +94,69 @@ h2{
 .pageButtons:hover{
     cursor: pointer;
     background-color: rgb(79, 73, 138);
+}
+.homeButtons{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.divButtons{
+    display: flex;
+    justify-content: space-between;
+}
+.divSearch{
+    width: 50%;
+}
+@media (max-width: 720px){
+    .homeButtons{
+        width: 100%;
+        display: block;
+    }
+    .divButtons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .divSearch{
+        width: 100%;
+    }
+    .pageButtons{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 30%;
+    }
+    .topBox{
+        margin-right: 8px;
+        margin-top: 8px;
+        display: block;
+        align-items:center;
+        justify-content:space-between;
+    }
+    .container {  
+        width: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          "."
+          ".";
+      }
 }

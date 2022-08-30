@@ -31,3 +31,19 @@
         width: 80%;
     }
 }
+@media (orientation: landscape){
+    .mainBox{
+        background-color: rgb(38, 38, 70);
+        display:flex;
+        justify-content:space-between;
+    }
+    
+    .aboutPage{
+        margin-left: 20px;
+        width: 40%;
+    }
+    .aboutMe{
+        margin-right: 20px;
+        width: 40%;
+    }
+}

@@ -33,10 +33,16 @@ export class Home extends Component {
       <div className={homeStyle.mainbox}>
         <p>.</p>
         <div className={homeStyle.topBox}>
-          <p className={homeStyle.logo}>Home</p>
-          <button className={homeStyle.createGameB} onClick={(e)=>createGameSwitch(e)}>Create Game</button>
-          <button className={homeStyle.createGameB} onClick={(e)=>handleAboutSwitch(e)}>About</button>
-          <SearchBar/>
+          <div className={homeStyle.homeButtons}>
+            <p className={homeStyle.logo}>Home</p>
+            <div className={homeStyle.divButtons}>
+              <button className={homeStyle.createGameB} onClick={(e)=>createGameSwitch(e)}>Create Game</button>
+              <button className={homeStyle.createGameB} onClick={(e)=>handleAboutSwitch(e)}>About</button>
+            </div>
+          </div>
+          <div className={homeStyle.divSearch}>
+            <SearchBar/>
+          </div>
         </div>
           <div className={homeStyle.about}>
             {this.props.about?<About/>:null}
