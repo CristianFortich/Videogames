@@ -47,13 +47,19 @@ const DetailedGame = () => {
 		<div className={detailStyle.mainBox}>
             {isLoading ? (<img src={loadingImage}/>):
 			(<>
-                <p>{game.name}</p>
-                <img src={game.image}/>
-                <p>Platforms: {game.platforms}</p>
-                <p>{game.description.replace( /(<([^>]+)>)/ig, '')}</p>
-                <p>Rating: {game.rating}</p>
-                <p>Release date: {game.released}</p>
-                <p>Genres: {game.genres}</p>
+                <div className={detailStyle.divHead}></div>
+                <p className={detailStyle.p}>
+                    <h1 className={detailStyle.h1}>{game.name}</h1>
+                    <p className={detailStyle.pImg}>
+                        <img className={detailStyle.img} src={game.image}/>
+                    </p>
+                    <p>Platforms: {game.platforms}</p>
+                    <p>{game.description.replace( /(<([^>]+)>)/ig, '')}</p>
+                    <p>Rating: {game.rating}</p>
+                    <p>Release date: {game.released}</p>
+                    <p>Genres: {game.genres}</p>
+                </p>
+                <div className={detailStyle.divFoot}></div>
             </>)}
 		</div>
 	);

@@ -1,12 +1,33 @@
 .mainBox{
     background-color:rgb(13, 14, 14);
-    height: 730px;
+    height: 100%;
+    align-items: center;
+    margin-bottom: -18px;
 }
-img{
-    margin-left: 525px;
-    width: 500px;
+.divHead{
+    height: 30px;
 }
-p{
-    color:antiquewhite;
+.divFoot{
+    height: 30px;
+}
+.img{
+    width: 80%;
+    margin-bottom: 20px;
+}
+.pImg{
     text-align: center;
+}
+.h1{
+    margin-top: -8px;
+}
+.p{
+    margin-left: 20%;
+    margin-right: 20%;
+    color:antiquewhite;
+    text-align: justify;
+}
+@media (min-width: 720px){
+    .h1{
+        text-size-adjust: auto;
+    }
 }
