@@ -9,14 +9,7 @@
 	font-size:90px;
 }
 
-.nameBox{
-    margin-left: 490px;
-    height: 200px;
-}
-
 .enterButton {
-    margin-top: 115px;
-    margin-left: px;
 	box-shadow:inset -3px 1px 20px 2px #8a2a21;
 	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
 	background-color:#c62d1f;
@@ -39,4 +32,11 @@
 .enterButton:active {
 	position:relative;
 	top:1px;
+}
+.header{
+	height: 20px;
+}
+.p{
+	text-align: center;
+	margin-top: 5%;
 }
