@@ -15,7 +15,7 @@
 }
 
 .img{
-    margin-top: 7px;
+    margin-top: 17px;
     margin-left: 5%;
     align-items: center;
     width: 90%;
@@ -39,10 +39,6 @@
     color: aliceblue;
     border: 2px solid rgb(160, 52, 52);
     border-radius: 7px;
-}
-
-.close:hover{
-    cursor: pointer;
 }
 
 .genres{

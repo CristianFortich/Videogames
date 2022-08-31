@@ -1,12 +1,14 @@
 import React, {useState} from 'react'
 import { useParams } from 'react-router-dom';
 import loadingImage from '../../pics/loading02.gif'
+import { deleteGame, updatePages, setPage } from '../../redux/actions';
 import detailStyle from './DetailedGame.module.css'
+import { useDispatch } from 'react-redux';
+
 
 const DetailedGame = () => {
+    const dispatch = useDispatch();
 	let {id} = useParams();
-	
-
     const [game, setGame] = useState({})
     const [isLoading, setIsLoading] = useState(true)
 	React.useEffect(() => {
@@ -40,10 +42,16 @@ const DetailedGame = () => {
                 })
                 setIsLoading(false)
             })
+            
+        }, []);
+        
+        const deleteG = async(e) => {
+            await dispatch(deleteGame(e));
+            await dispatch(updatePages())
+            dispatch(setPage(1))
+        }
 
-	}, []);
-
-	return (
+        return (
 		<div className={detailStyle.mainBox}>
             {isLoading ? (
                 <div className={detailStyle.divImg}>
@@ -63,6 +71,7 @@ const DetailedGame = () => {
                     <p>Release date: {game.released}</p>
                     <p>Genres: {game.genres}</p>
                 </p>
+                {isNaN(parseInt(id))? (<button className={detailStyle.close} onClick={()=>deleteG(id)}>Delete</button>) : null }
                 <div className={detailStyle.divFoot}></div>
             </>)}
 		</div>

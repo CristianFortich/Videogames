@@ -8,7 +8,7 @@
     height: 30px;
 }
 .divFoot{
-    height: 30px;
+    height: 100px;
 }
 .img{
     width: 80%;
@@ -19,6 +19,18 @@
 }
 .h1{
     margin-top: -8px;
+}
+.close{
+    background-color: rgb(168, 76, 76);
+    margin-left: 47%;
+    width: 6%;
+    margin-right: 47%;
+    color: aliceblue;
+    border: 2px solid rgb(160, 52, 52);
+    border-radius: 7px;
+}
+.close:hover{
+    background-color: rgb(155, 2, 2);
 }
 .divImg{
     height: 1500px;
