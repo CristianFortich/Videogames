@@ -16,6 +16,10 @@
     text-decoration: none;
     color: rgb(193, 213, 231);;
 }
+.pAboutMe{
+    color:antiquewhite;
+    text-align: justify;
+}
 @media (max-width: 720px){
     .mainBox{
         display: block;

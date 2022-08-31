@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import {searchGames, getAllGames, organizeGames, deleteGame, updatePages, setPage, cgSwitch, aboutSwitch} from "../../redux/actions"
+import {searchGames, getAllGames, organizeGames, deleteGame, updatePages, setPage, cgSwitch, aboutSwitch, resetAll} from "../../redux/actions"
 import GameCard from '../GameCard/GameCard'
 import loadingImage from '../../pics/loading02.gif'
 import Draggable from "react-draggable"
@@ -8,12 +8,12 @@ import SearchBar from '../SearchBar/SearchBar'
 import homeStyle from './Home.module.css'
 import CreateGame from '../CreatGame/CreateGame'
 import About from '../About/About'
+import logo from '../../pics/consileico.webp'
 
 export class Home extends Component {
   async componentDidMount(){
     await this.props.getAllGames();
     this.props.updatePages();
-    console.log(this.props.genres)
   }
 
   
@@ -29,12 +29,19 @@ export class Home extends Component {
       console.log(this.props.about)
       this.props.aboutSwitch(this.props.about)
     }
+    const handleLogo = async ()=>{
+      this.props.resetAll()
+      await this.props.getAllGames();
+      this.props.updatePages();
+      this.props.setPage(1)
+    }
     return (
       <div className={homeStyle.mainbox}>
         <p>.</p>
         <div className={homeStyle.topBox}>
           <div className={homeStyle.homeButtons}>
-            <p className={homeStyle.logo}>Home</p>
+            <img onClick={()=>handleLogo()} src={logo} className={homeStyle.logo}/>
+            {/* <p className={homeStyle.logo}>Home</p> */}
             <div className={homeStyle.divButtons}>
               <button className={homeStyle.createGameB} onClick={(e)=>createGameSwitch(e)}>Create Game</button>
               <button className={homeStyle.createGameB} onClick={(e)=>handleAboutSwitch(e)}>About</button>
@@ -98,7 +105,8 @@ export const mapDispatchToProps = (dispatch)=>{
     updatePages: () => dispatch(updatePages()),
     setPage: (pageNumber) => dispatch(setPage(pageNumber)),
     cgSwitch: (data)=> dispatch(cgSwitch(data)),
-    aboutSwitch: (data)=> dispatch(aboutSwitch(data))
+    aboutSwitch: (data)=> dispatch(aboutSwitch(data)),
+    resetAll: ()=> dispatch(resetAll())
   }
 }
 

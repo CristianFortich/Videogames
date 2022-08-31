@@ -9,12 +9,13 @@ h2{
     color: whitesmoke;
 }
 .logo{
-    margin-top: 25px;
-    margin-left: 18px;
-    font-size: 40px;
-    border: 10px;
-    color: whitesmoke;
-    text-shadow: 2px 2px 5px rgb(221, 237, 80);
+    width: 75px;
+    margin-left: 20%;
+    margin-right: auto;
+    opacity: 0.5;
+}
+.logo:hover{
+    cursor: pointer;
 }
 .topBox{
     margin-right: 8px;
@@ -121,6 +122,11 @@ h2{
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    .logo{
+        margin-left: 40%;
+        margin-right: 40%;
+        width: 20%;
     }
     .divSearch{
         width: 100%;

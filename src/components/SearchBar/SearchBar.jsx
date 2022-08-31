@@ -46,8 +46,8 @@ function SearchBar() {
           <option value={"existent"}>Existent</option>
         </select>
         <select onChange={handleChange} name="order">
-          <option selecter="yes" value={"descend"}>descendent</option>
-          <option value={"ascend"}>ascendent</option>
+          <option selecter="yes" value={"descend"}>Descendent</option>
+          <option value={"ascend"}>Ascendent</option>
         </select>
         <select onChange={handleChange} name="orderBy">
           <option selecter="yes" value={"name"}>Name</option>
