@@ -57,7 +57,7 @@
     margin-left: 5%;
     margin-right: 5%;
 }
-@media (min-width: 720px){
+@media (max-width: 720px){
     .h1{
         text-size-adjust: auto;
     }
@@ -65,7 +65,13 @@
         height: 400px;
     }
     .p{
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .close{
+        margin-left: 42%;
+        width: 16%;
+        margin-right: 42%;
     }
 }

@@ -60,20 +60,18 @@ const DetailedGame = () => {
             ):
 			(<>
                 <div className={detailStyle.divHead}></div>
-                <div className={detailStyle.divInfo}>
-                    <p className={detailStyle.p}>
-                        <h1 className={detailStyle.h1}>{game.name.toUpperCase()}</h1>
-                        <p className={detailStyle.pImg}>
-                            <img className={detailStyle.img} src={game.image}/>
-                        </p>
-                        <p className={detailStyle.pI}>Platforms: {game.platforms}</p>
-                        <p className={detailStyle.pI}>{game.description.replace( /(<([^>]+)>)/ig, '')}</p>
-                        <p className={detailStyle.pI}>Rating: {game.rating}</p>
-                        <p className={detailStyle.pI}>Release date: {game.released}</p>
-                        <p className={detailStyle.pI}>Genres: {game.genres}</p>
-                        <div className={detailStyle.pFoot}></div>
+                <p className={detailStyle.p}>
+                    <h1 className={detailStyle.h1}>{game.name.toUpperCase()}</h1>
+                    <p className={detailStyle.pImg}>
+                        <img className={detailStyle.img} src={game.image}/>
                     </p>
-                </div>
+                    <p className={detailStyle.pI}>Platforms: {game.platforms}</p>
+                    <p className={detailStyle.pI}>{game.description.replace( /(<([^>]+)>)/ig, '')}</p>
+                    <p className={detailStyle.pI}>Rating: {game.rating}</p>
+                    <p className={detailStyle.pI}>Release date: {game.released}</p>
+                    <p className={detailStyle.pI}>Genres: {game.genres}</p>
+                    <div className={detailStyle.pFoot}></div>
+                </p>
                 {isNaN(parseInt(id))? (<button className={detailStyle.close} onClick={()=>deleteG(id)}>Delete</button>) : null }
                 <div className={detailStyle.divFoot}></div>
             </>)}
