@@ -4,10 +4,12 @@ import loadingImage from '../../pics/loading02.gif'
 import { deleteGame, updatePages, setPage } from '../../redux/actions';
 import detailStyle from './DetailedGame.module.css'
 import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom'
 
 
 const DetailedGame = () => {
     const dispatch = useDispatch();
+    const history = useHistory()
 	let {id} = useParams();
     const [game, setGame] = useState({})
     const [isLoading, setIsLoading] = useState(true)
@@ -49,6 +51,7 @@ const DetailedGame = () => {
             await dispatch(deleteGame(e));
             await dispatch(updatePages())
             dispatch(setPage(1))
+            history.push("/home")
         }
 
         return (
